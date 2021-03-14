@@ -1,0 +1,62 @@
+#!/bin/bash
+
+IN=$1
+SCALE=$2
+#OUT=$2
+
+# get the filename without the extension
+JOB=${SCALE}
+
+
+PARTITION=mko # sauer or coms or teach
+TIME=100:00:00
+
+SUBMIT=qsub.tmp
+
+mkdir $JOB
+cp md.inp $JOB
+cp $IN $JOB
+PWD=`pwd`
+
+
+NCPUS=1
+MEM=3GB
+
+
+
+cat > $SUBMIT <<!EOF
+#!/bin/sh
+#SBATCH --job-name=$JOB
+#SBATCH --cpus-per-task=$NCPUS
+#SBATCH --ntasks=1
+#SBATCH --error=$PWD/$OUT/$JOB\_%j.err
+#SBATCH --output=$PWD/$OUT/$JOB\_%j.out
+#SBATCH --time=$TIME
+#SBATCH --partition=$PARTITION
+#SBATCH --no-requeue
+#SBATCH --mem=$MEM
+
+cd $JOB
+# Create scratch folder
+mkdir /scratch/\$SLURM_JOB_ID
+
+export XTBHOME=/opt/xtb/6.1/xtb-190527/bin
+
+ulimit -s unlimited
+export OMP_STACKSIZE=$MEM
+export OMP_NUM_THREADS=$NCPUS
+
+sed -i "s/autoscale=/autoscale=$SCALE/g" md.inp
+
+/opt/xtb/6.1/xtb-190527/bin/xtb $IN --md --input md.inp --gfn2 > $JOB.out
+
+cp xtb.trj ../${JOB}_md.trj
+cd ..
+
+# Remove scratch folder
+rm -rf /scratch/\$SLURM_JOB_ID
+
+!EOF
+
+sbatch $SUBMIT
+

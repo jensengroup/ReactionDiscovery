@@ -1,0 +1,99 @@
+#!/bin/bash
+#SBATCH --job-name=analyze_trajectory__0
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --ntasks=1
+#SBATCH --error=/home/mariaharris/github/ReactionDiscovery/metadynamics_search/metadynamics/0.8_0.05_0.3/run8/analyze_trajectory/analyze_trajectory__0\_%j.stderr
+#SBATCH --output=/home/mariaharris/github/ReactionDiscovery/metadynamics_search/metadynamics/0.8_0.05_0.3/run8/analyze_trajectory/analyze_trajectory__0\_%j.stdout
+#SBATCH --time=100:00:00
+#SBATCH --partition=mko
+#SBATCH --no-requeue
+#SBATCH --mem=3GB
+
+
+start=`date +%s`
+
+
+nodename=$HOSTNAME
+echo 0 "Running on $nodename"
+echo 0 "un-tar input files"
+
+
+mkdir /scratch/$SLURM_JOB_ID
+cd /scratch/$SLURM_JOB_ID
+
+
+cp /home/mariaharris/github/ReactionDiscovery/metadynamics_search/metadynamics/0.8_0.05_0.3/run8/analyze_trajectory/batch_0_xtb.tar.gz .
+tar -xzf batch_0_xtb.tar.gz
+
+export XTBHOME=/opt/xtb/6.1/xtb-190527/bin
+
+
+ulimit -s unlimited
+export OMP_STACKSIZE=3GB
+export OMP_NUM_THREADS=1
+export MPL_NUM_THREADS=1
+
+run_calculation () {
+
+    input=${1%.*}
+
+    echo $input
+
+    mkdir $input
+    cp $input.xyz $input/$input.xyz
+    cd $input
+
+    /opt/xtb/6.1/xtb-190527/bin/xtb $input.xyz --opt tight --gfn 2 > $input.xtbout
+
+    mv xtbopt.xyz ../$input.optxyz
+    #mv $input.xtbout /home/mariaharris/github/ReactionDiscovery/metadynamics_search/metadynamics/0.8_0.05_0.3/run8/analyze_trajectory
+    #cp $input.xtbout ../
+    cd ..
+
+}
+
+export -f run_calculation
+
+# END MOPAC
+
+
+end=`date +%s`
+runtime=$((end-start))
+echo $runtime "run calculation"
+
+
+ls -f *.xyz | parallel -j1 "run_calculation {}"
+
+
+end=`date +%s`
+runtime=$((end-start))
+echo $runtime "tar output"
+
+
+tar -czf batch_0_log_xtb.tar.gz *.optxyz
+cp batch_0_log_xtb.tar.gz /home/mariaharris/github/ReactionDiscovery/metadynamics_search/metadynamics/0.8_0.05_0.3/run8/analyze_trajectory
+
+
+end=`date +%s`
+runtime=$((end-start))
+echo $runtime "untar in /home/mariaharris/github/ReactionDiscovery/metadynamics_search/metadynamics/0.8_0.05_0.3/run8/analyze_trajectory"
+
+
+ssh sunray "cd /home/mariaharris/github/ReactionDiscovery/metadynamics_search/metadynamics/0.8_0.05_0.3/run8/analyze_trajectory && tar xzf batch_0_log_xtb.tar.gz"
+
+
+end=`date +%s`
+runtime=$((end-start))
+echo $runtime "done"
+
+
+convertsecs() {
+    ((h=${1}/3600))
+    ((m=(${1}%3600)/60))
+    ((s=${1}%60))
+    printf "%02d:%02d:%02d\n" $h $m $s
+}
+
+convertsecs $runtime
+

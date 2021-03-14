@@ -1,0 +1,64 @@
+#!/bin/bash
+
+XYZFILE=$1
+KPUSH=$2
+ALP=$3
+SCALE=$4
+RUN_NUMBER=$5
+
+# get the filename without the extension
+JOB=${RUN_NUMBER}
+
+
+PARTITION=mko # sauer or coms or teach
+TIME=100:00:00
+
+SUBMIT=qsub.tmp
+
+#mkdir $JOB
+#cp metadyn.inp $JOB
+#cp $XYZFILE $JOB
+PWD=`pwd`
+
+
+NCPUS=1
+MEM=2GB
+
+
+
+cat > $SUBMIT <<!EOF
+#!/bin/sh
+#SBATCH --job-name=$JOB
+#SBATCH --cpus-per-task=$NCPUS
+#SBATCH --ntasks=1
+#SBATCH --error=$PWD/$OUT/$JOB\_%j.err
+#SBATCH --output=$PWD/$OUT/$JOB\_%j.out
+#SBATCH --time=$TIME
+#SBATCH --partition=$PARTITION
+#SBATCH --no-requeue
+#SBATCH --mem=$MEM
+
+#cd $JOB
+# Create scratch folder
+mkdir /scratch/\$SLURM_JOB_ID
+
+export XTBHOME=/opt/xtb/6.1/xtb-190527/bin
+
+ulimit -s unlimited
+export OMP_STACKSIZE=$MEM
+export OMP_NUM_THREADS=$NCPUS
+
+sed -i "s/kpush=/kpush=$KPUSH/g" metadyn.inp
+sed -i "s/alp=/alp=$ALP/g" metadyn.inp
+sed -i "s/autoscale=/autoscale=$SCALE/g" metadyn.inp
+
+/opt/xtb/6.1/xtb-190527/bin/xtb $XYZFILE --md --input metadyn.inp --gfn 2 > $JOB.out
+
+
+# Remove scratch folder
+rm -rf /scratch/\$SLURM_JOB_ID
+#rm -rf $OUT
+!EOF
+
+sbatch $SUBMIT
+

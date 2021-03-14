@@ -1,0 +1,60 @@
+#!/bin/bash
+
+JOB="split_trajectory"
+
+python_path=$1
+trajectory_file=$2
+n_steps=$3
+charge=$4
+outfile=$5
+#python_script=$(basename $python_path)
+echo $python_path
+echo $trajectory_file
+echo $n_steps
+echo $charge
+echo $outfile
+
+SUBMIT=qsub.tmp
+
+PWD=`pwd`
+
+
+PARTITION=mko # sauer or coms or teach
+TIME=100:00:00
+NCPUS=1
+MEM=3GB
+
+cat > $SUBMIT <<!EOF
+#!/bin/sh
+#SBATCH --job-name=$JOB
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=$NCPUS
+#SBATCH --mem=$MEM
+#SBATCH --error=$PWD/$JOB\_%j.stderr
+#SBATCH --output=$PWD/$JOB\_%j.stdout
+#SBATCH --ntasks=1
+#SBATCH --time=$TIME
+#SBATCH --partition=$PARTITION
+#SBATCH --no-requeue
+
+# Create scratch folder
+mkdir /scratch/\$SLURM_JOB_ID
+cd /scratch/\$SLURM_JOB_ID
+
+cp $PWD/$trajectory_file .
+
+ulimit -s unlimited
+export OMP_STACKSIZE=$MEM
+
+($python_path $trajectory_file $n_steps $charge $outfile)
+
+cp -r analyze_trajectory $PWD
+cp $outfile $PWD
+
+rm -rf /scratch/\$SLURM_JOB_ID
+
+!EOF
+
+sbatch $SUBMIT
+
+
