@@ -46,7 +46,10 @@ def choose_resonance_structure(mol):
                                                  rdchem.ResonanceFlags.ALLOW_CHARGE_SEPARATION)
     new_mol = None
     for res_mol in resonance_mols:
-        Chem.SanitizeMol(res_mol)
+        try:
+            Chem.SanitizeMol(res_mol)
+        except:
+            continue
         n_rot_bonds = Chem.rdMolDescriptors.CalcNumRotatableBonds(res_mol)
         if new_mol is None:
             smallest_rot_bonds = n_rot_bonds
