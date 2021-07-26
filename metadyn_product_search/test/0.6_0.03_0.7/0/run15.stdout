@@ -1,0 +1,535 @@
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '0.xyz', '--omd', '--input', 'md.inp', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '0.6_md.xyz', '--md', '--input', 'metadyn.inp', '--gfn2', '--chrg', '0']
+0 1
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+smiles = [C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+110 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+220 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+330 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+440 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+550 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+660 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+770 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+880 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+990 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1100 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1210 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1320 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1430 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1540 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1650 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1760 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1870 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1980 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2090 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2200 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2310 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2420 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2530 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2640 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2750 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2860 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2970 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3080 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3190 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3300 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3410 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3520 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3630 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3740 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3850 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3960 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4070 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4180 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4290 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4400 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4510 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4620 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4730 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4840 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4950 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5060 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5170 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5280 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5390 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '1.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '2.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', 'restart_structure.xyz', '--md', '--input', 'metadyn.inp', '--gfn2', '--chrg', '0']
+0 1
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+smiles = [C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+110 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+220 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+330 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+440 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+550 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+660 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+770 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+880 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+990 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1100 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1210 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1320 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1430 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1540 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1650 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1760 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1870 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1980 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2090 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2200 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2310 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2420 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2530 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2640 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2750 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2860 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2970 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3080 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3190 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3300 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3410 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3520 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3630 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3740 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3850 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3960 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4070 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4180 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4290 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4400 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4510 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4620 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4730 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4840 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4950 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5060 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5170 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5280 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5390 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '1.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '2.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', 'restart_structure.xyz', '--md', '--input', 'metadyn.inp', '--gfn2', '--chrg', '0']
+0 1
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+smiles = [C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+110 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+220 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+330 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+440 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+550 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+660 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+770 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+880 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+990 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1100 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1210 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1320 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1430 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1540 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1650 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1760 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1870 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+1980 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2090 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2200 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2310 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2420 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2530 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2640 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2750 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2860 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+2970 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3080 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3190 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3300 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3410 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3520 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3630 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3740 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3850 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+3960 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4070 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4180 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4290 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4400 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4510 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4620 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4730 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4840 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+4950 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5060 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5170 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5280 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+5390 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '1.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '2.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', 'restart_structure.xyz', '--md', '--input', 'metadyn.inp', '--gfn2', '--chrg', '0']
+0 1
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+smiles = [C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+110 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+220 2
+[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7]
+330 2
+[C@:1]([C-:2]([H:4])[H:5])([C+:3]([H:6])[H:7])([H:8])[H:9]
+smiles =  [C@:1]([C-:2]([H:4])[H:5])([C+:3]([H:6])[H:7])([H:8])[H:9]
+440 3
+[C@:1]([C-:2]([H:4])[H:5])([C+:3]([H:6])[H:7])([H:8])[H:9]
+550 3
+[C@:1]([C-:2]([H:4])[H:5])([C+:3]([H:6])[H:7])([H:8])[H:9]
+660 3
+[C@:1]([C-:2]([H:4])[H:5])([C+:3]([H:6])[H:7])([H:8])[H:9]
+770 3
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+smiles =  [C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+880 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+990 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1100 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1210 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1320 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1430 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1540 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1650 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1760 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1870 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+1980 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2090 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2200 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2310 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2420 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2530 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2640 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2750 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2860 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+2970 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3080 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3190 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3300 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3410 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3520 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3630 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3740 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3850 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+3960 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4070 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4180 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4290 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4400 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4510 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4620 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4730 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4840 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+4950 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+5060 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+5170 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+5280 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+5390 4
+[C@@:1]1([H:8])([H:9])[C@@:2]([H:4])([H:5])[C@@:3]1([H:6])[H:7]
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '3.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '1.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '2.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+['/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb', '4.xyz', '--opt', 'tight', '--gfn2', '--chrg', '0']
+change in AC: stopping
+run15/structure_database/
+run15/structure_database/xyz_files/
+run15/structure_database/xyz_files/23d7d09a889e0db063abaadaada9022550d1ac21.xyz
+run15/structure_database/xyz_files/cee126119b4905bdafdf73f51bb6c075bc7f8593.xyz
+run15/structure_database/xyz_files/a138ce144e16d2c5f4c478de3d9a0e20f189ae67.xyz
+run15/structure_database/structure_database.csv
+run15/
+run15/structure_database/
+run15/structure_database/xyz_files/
+run15/structure_database/xyz_files/23d7d09a889e0db063abaadaada9022550d1ac21.xyz
+run15/structure_database/xyz_files/cee126119b4905bdafdf73f51bb6c075bc7f8593.xyz
+run15/structure_database/xyz_files/a138ce144e16d2c5f4c478de3d9a0e20f189ae67.xyz
+run15/structure_database/structure_database.csv
+run15/dataframe.pkl
+run15/0.6_md.xyz
+run15/metadynamics/
+run15/metadynamics/charges
+run15/metadynamics/mdrestart
+run15/metadynamics/analyze_trajectory_10/
+run15/metadynamics/analyze_trajectory_10/xtbopt.log
+run15/metadynamics/analyze_trajectory_10/2.optxyz
+run15/metadynamics/analyze_trajectory_10/charges
+run15/metadynamics/analyze_trajectory_10/1.xyz
+run15/metadynamics/analyze_trajectory_10/xtbrestart
+run15/metadynamics/analyze_trajectory_10/run.out
+run15/metadynamics/analyze_trajectory_10/optimized_structures/
+run15/metadynamics/analyze_trajectory_10/1.optxyz
+run15/metadynamics/analyze_trajectory_10/.xtboptok
+run15/metadynamics/analyze_trajectory_10/2.xyz
+run15/metadynamics/analyze_trajectory_10/nul
+run15/metadynamics/analyze_trajectory_10/wbo
+run15/metadynamics/xtb_15.trj
+run15/metadynamics/initial_structures.xyz
+run15/metadynamics/xtb.trj
+run15/metadynamics/scoord.3
+run15/metadynamics/xtbrestart
+run15/metadynamics/run.out
+run15/metadynamics/scoord.1
+run15/metadynamics/0.6_md.xyz
+run15/metadynamics/xtb_0.trj
+run15/metadynamics/analyze_trajectory_0/
+run15/metadynamics/analyze_trajectory_0/xtbopt.log
+run15/metadynamics/analyze_trajectory_0/2.optxyz
+run15/metadynamics/analyze_trajectory_0/charges
+run15/metadynamics/analyze_trajectory_0/1.xyz
+run15/metadynamics/analyze_trajectory_0/xtbrestart
+run15/metadynamics/analyze_trajectory_0/run.out
+run15/metadynamics/analyze_trajectory_0/optimized_structures/
+run15/metadynamics/analyze_trajectory_0/optimized_structures/1.optxyz
+run15/metadynamics/analyze_trajectory_0/1.optxyz
+run15/metadynamics/analyze_trajectory_0/.xtboptok
+run15/metadynamics/analyze_trajectory_0/2.xyz
+run15/metadynamics/analyze_trajectory_0/nul
+run15/metadynamics/analyze_trajectory_0/wbo
+run15/metadynamics/restart_structure.xyz
+run15/metadynamics/analyze_trajectory_15/
+run15/metadynamics/analyze_trajectory_15/xtbopt.log
+run15/metadynamics/analyze_trajectory_15/2.optxyz
+run15/metadynamics/analyze_trajectory_15/4.optxyz
+run15/metadynamics/analyze_trajectory_15/3.xyz
+run15/metadynamics/analyze_trajectory_15/charges
+run15/metadynamics/analyze_trajectory_15/1.xyz
+run15/metadynamics/analyze_trajectory_15/xtbrestart
+run15/metadynamics/analyze_trajectory_15/run.out
+run15/metadynamics/analyze_trajectory_15/optimized_structures/
+run15/metadynamics/analyze_trajectory_15/optimized_structures/2.optxyz
+run15/metadynamics/analyze_trajectory_15/optimized_structures/3.optxyz
+run15/metadynamics/analyze_trajectory_15/1.optxyz
+run15/metadynamics/analyze_trajectory_15/.xtboptok
+run15/metadynamics/analyze_trajectory_15/2.xyz
+run15/metadynamics/analyze_trajectory_15/4.xyz
+run15/metadynamics/analyze_trajectory_15/3.optxyz
+run15/metadynamics/analyze_trajectory_15/nul
+run15/metadynamics/analyze_trajectory_15/wbo
+run15/metadynamics/metadyn.inp
+run15/metadynamics/analyze_trajectory_5/
+run15/metadynamics/analyze_trajectory_5/xtbopt.log
+run15/metadynamics/analyze_trajectory_5/2.optxyz
+run15/metadynamics/analyze_trajectory_5/charges
+run15/metadynamics/analyze_trajectory_5/1.xyz
+run15/metadynamics/analyze_trajectory_5/xtbrestart
+run15/metadynamics/analyze_trajectory_5/run.out
+run15/metadynamics/analyze_trajectory_5/optimized_structures/
+run15/metadynamics/analyze_trajectory_5/1.optxyz
+run15/metadynamics/analyze_trajectory_5/.xtboptok
+run15/metadynamics/analyze_trajectory_5/2.xyz
+run15/metadynamics/analyze_trajectory_5/nul
+run15/metadynamics/analyze_trajectory_5/wbo
+run15/metadynamics/scoord.4
+run15/metadynamics/meta_out.log
+run15/metadynamics/nul
+run15/metadynamics/wbo
+run15/metadynamics/scoord.2
+run15/metadynamics/xtb_5.trj
+run15/metadynamics/xtbmdok
+run15/metadynamics/xtb_10.trj
+run15/md/
+run15/md/xtbopt.log
+run15/md/charges
+run15/md/mdrestart
+run15/md/xtb.trj
+run15/md/xtbrestart
+run15/md/run.out
+run15/md/scoord.1
+run15/md/0.6_md.xyz
+run15/md/.xtboptok
+run15/md/md.inp
+run15/md/0.xyz
+run15/md/md_out.log
+run15/md/nul
+run15/md/wbo
+run15/md/xtbopt.xyz
+run15/md/xtbmdok

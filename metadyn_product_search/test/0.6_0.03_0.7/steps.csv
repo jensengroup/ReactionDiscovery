@@ -1,0 +1,2 @@
+,smiles,mean_step,median_step,mean_step_above100,median_step_above100
+0,[C@@:1]1([H:8])([H:9])[C@:2]([H:4])([H:5])[C@:3]1([H:6])[H:7],1332.5,1320.0,1332.5,1320.0
