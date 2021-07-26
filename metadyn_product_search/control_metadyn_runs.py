@@ -104,9 +104,9 @@ if __name__ == "__main__":
     SMILES_DF = pd.read_csv(SMILES_LIST, index_col=0)
     print(SMILES_DF)
     CPUS = 1
-    MEM = "3GB"
+    MEM = "2GB"
     MAX_QUEUE = 300
-    N_RUNS = 100
+    N_RUNS = 20
     S_FACTOR = 0.6
     TIME_PS = 5
     K_PUSH = 0.03
