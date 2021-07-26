@@ -1,0 +1,87 @@
+['srun', '/software/kemi/g16/g16', 'path_point_0_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_1_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_2_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_3_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_4_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_5_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_6_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_7_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_8_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_9_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_10_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_11_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_12_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_13_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_14_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_15_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_16_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_17_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_18_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_19_sp.com']
+['srun', '/software/kemi/g16/g16', 'path_point_20_sp.com']
+[]
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_ts.com']
+Number of imaginary frequencies = 1
+transition: 1
+Lowest imaginary frequency active along:               0 bonds
+# of imaginary frequencies = 1
+lowest imag. freq = -674.7934
+optimized energy (dft_interpolation/path_point_10_ts.out) = -371.472250058
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_ts_irc_forward.com']
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_ts_irc_reverse.com']
+optimized energy (dft_interpolation/path_point_10_ts_irc_forward.out) = -371.535492276
+optimized energy (dft_interpolation/path_point_10_ts_irc_reverse.out) = -371.512886215
+[N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]\[O-:5])[H:9])\[H:8] [N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]/[O-:5])[H:9])\[H:8]
+dft_interpolation/path_point_10_ts_irc_reverse.xyz
+[N:1](=[c:2]1/[n+:6]([O-:5])[c:7]1[H:9])\[H:8].[N:3]#[N:4]
+reverse SMILES:  [N:1](=[c:2]1/[n+:6]([O-:5])[c:7]1[H:9])\[H:8].[N:3]#[N:4]
+dft_interpolation/path_point_10_ts_irc_forward.xyz
+[N+:1](#[C:2]/[C:7](=[N:6]\[O-:5])[H:9])[H:8].[N:3]#[N:4]
+forward smiles:  [N+:1](#[C:2]/[C:7](=[N:6]\[O-:5])[H:9])[H:8].[N:3]#[N:4]
+found non-coonformational change
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_ts_irc_forward_opt.com']
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_ts_irc_reverse_opt.com']
+optimized energy (dft_interpolation/path_point_10_ts_irc_forward_opt.out) = -371.547879111
+optimized energy (dft_interpolation/path_point_10_ts_irc_reverse_opt.out) = -371.513561309
+[N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]\[O-:5])[H:9])\[H:8] [N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]/[O-:5])[H:9])\[H:8]
+dft_interpolation/path_point_10_ts_irc_reverse_opt.xyz
+[N:1](=[c:2]1/[n+:6]([O-:5])[c:7]1[H:9])\[H:8].[N:3]#[N:4]
+reverse SMILES:  [N:1](=[c:2]1/[n+:6]([O-:5])[c:7]1[H:9])\[H:8].[N:3]#[N:4]
+dft_interpolation/path_point_10_ts_irc_forward_opt.xyz
+[N+:1](#[C:2]/[C:7](=[N:6]\[O-:5])[H:9])[H:8].[N:3]#[N:4]
+forward smiles:  [N+:1](#[C:2]/[C:7](=[N:6]\[O-:5])[H:9])[H:8].[N:3]#[N:4]
+found non-coonformational change
+---------- do constrained optimization ------------
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_opt.com']
+optimized energy (dft_interpolation/path_point_10_opt.out) = -371.528248829
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_opt_ts.com']
+Number of imaginary frequencies = 1
+transition: 1
+Lowest imaginary frequency active along:               0 bonds
+# of imaginary frequencies = 1
+lowest imag. freq = -660.3906
+optimized energy (dft_interpolation/path_point_10_opt_ts.out) = -371.539787586
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_opt_ts_irc_forward.com']
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_opt_ts_irc_reverse.com']
+optimized energy (dft_interpolation/path_point_10_opt_ts_irc_forward.out) = -371.550699282
+optimized energy (dft_interpolation/path_point_10_opt_ts_irc_reverse.out) = -371.550886213
+[N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]\[O-:5])[H:9])\[H:8] [N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]/[O-:5])[H:9])\[H:8]
+dft_interpolation/path_point_10_opt_ts_irc_reverse.xyz
+[N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+reverse SMILES:  [N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+dft_interpolation/path_point_10_opt_ts_irc_forward.xyz
+[N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+forward smiles:  [N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+found TS for conformational change
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_opt_ts_irc_forward_opt.com']
+['srun', '/software/kemi/g16/g16', 'dft_interpolation/path_point_10_opt_ts_irc_reverse_opt.com']
+optimized energy (dft_interpolation/path_point_10_opt_ts_irc_forward_opt.out) = -371.551677468
+optimized energy (dft_interpolation/path_point_10_opt_ts_irc_reverse_opt.out) = -371.551688509
+[N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]\[O-:5])[H:9])\[H:8] [N:1](=[C:2]([N+:3]#[N:4])/[C:7](=[N:6]/[O-:5])[H:9])\[H:8]
+dft_interpolation/path_point_10_opt_ts_irc_reverse_opt.xyz
+[N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+reverse SMILES:  [N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+dft_interpolation/path_point_10_opt_ts_irc_forward_opt.xyz
+[N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+forward smiles:  [N+:1](#[C:2]/[C:7](=[N:6]/[O-:5])[H:9])[H:8].[N:3]#[N:4]
+found TS for conformational change

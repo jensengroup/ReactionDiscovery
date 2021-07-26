@@ -1,0 +1,888 @@
+ Entering Gaussian System, Link 0=/software/kemi/g16/avx2/g16/g16
+ Initial command:
+ /software/kemi/g16/avx2/g16/l1.exe "/scratch/23802732/Gau-12236.inp" -scrdir="/scratch/23802732/"
+ Entering Link 1 = /software/kemi/g16/avx2/g16/l1.exe PID=     12237.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2016,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 16 program.  It is based on
+ the Gaussian(R) 09 system (copyright 2009, Gaussian, Inc.),
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 16, Revision A.03,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, 
+ G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, 
+ J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, 
+ J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, 
+ F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, 
+ T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, 
+ G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, 
+ J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, 
+ T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, 
+ F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, 
+ V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, 
+ J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, 
+ J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, 
+ J. B. Foresman, and D. J. Fox, Gaussian, Inc., Wallingford CT, 2016.
+ 
+ ******************************************
+ Gaussian 16:  ES64L-G16RevA.03 25-Dec-2016
+                11-Jun-2021 
+ ******************************************
+ %nprocshared=1
+ Will use up to    1 processors via shared memory.
+ %mem=2GB
+ ----------------------------------------------------------------------
+ #opt geom(modredundant, gic) external="/groups/kemi/mharris/github/xtb
+ _ts_test/xtb_external.py"
+ ----------------------------------------------------------------------
+ 1/6=10,10=10,18=4000020,19=15,26=1,38=1,145=903/1,3;
+ 2/9=110,12=2,17=6,18=5,40=1/2;
+ 3/11=9,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/20=17,22=1001,24=3,113=1,114=1/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 7/44=-1/16;
+ 1/6=10,10=10,18=4000020,19=15,26=1,145=903/3(2);
+ 2/9=110/2;
+ 99//99;
+ 2/9=110/2;
+ 3/11=9,25=1,30=1,41=9900000,43=2,71=1/1;
+ 4/16=2,20=17,22=1001,24=3,113=1,114=1/2;
+ 7/44=-1/16;
+ 1/6=10,10=10,18=4000020,19=15,26=1,145=903/3(-4);
+ 2/9=110/2;
+ 6/7=2,8=2,9=2,10=2/1;
+ 99//99;
+ ---------------
+ something title
+ ---------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ N                    -0.51343   0.46221  -0.75043 
+ C                    -0.34325  -0.57633  -0.09905 
+ N                    -1.24321  -1.64632   0.03724 
+ N                    -1.67803  -2.43356   0.69852 
+ O                     1.08121  -2.06182  -1.04163 
+ N                     1.58872  -1.66193   0.07683 
+ C                     0.89474  -0.85192   0.72881 
+ H                    -1.29193   0.54219  -1.37651 
+ H                     1.05651  -0.5047    1.75724 
+ 
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ No Z-matrix variables, so optimization will use Cartesian coordinates.
+ Trust Radius=1.00D-01 FncErr=1.00D-07 GrdErr=1.00D-07 EigMax=2.50D+02 EigMin=1.00D-04
+ Number of steps in this run=      2 maximum allowed number of steps=      2.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          7           0       -0.513432    0.462212   -0.750430
+      2          6           0       -0.343250   -0.576329   -0.099047
+      3          7           0       -1.243208   -1.646316    0.037244
+      4          7           0       -1.678034   -2.433563    0.698518
+      5          8           0        1.081206   -2.061815   -1.041629
+      6          7           0        1.588715   -1.661934    0.076827
+      7          6           0        0.894743   -0.851923    0.728812
+      8          1           0       -1.291932    0.542192   -1.376505
+      9          1           0        1.056510   -0.504695    1.757240
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  N    0.000000
+     2  C    1.237671   0.000000
+     3  N    2.366198   1.404768   0.000000
+     4  N    3.441113   2.422205   1.116295   0.000000
+     5  O    2.999730   2.263671   2.596056   3.283247   0.000000
+     6  N    3.100866   2.223052   2.832243   3.413731   1.291671
+     7  C    2.428593   1.514572   2.383309   3.020213   2.152456
+     8  H    1.002212   1.944990   2.605883   3.648275   3.539036
+     9  H    3.112561   2.325997   3.090370   3.509865   3.202952
+                    6          7          8          9
+     6  N    0.000000
+     7  C    1.250120   0.000000
+     8  H    3.907489   3.340279   0.000000
+     9  H    2.108609   1.097452   4.053580   0.000000
+ Stoichiometry    C2H2N4O
+ Framework group  C1[X(C2H2N4O)]
+ Deg. of freedom    21
+ Full point group                 C1      NOp   1
+ Largest Abelian subgroup         C1      NOp   1
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          7           0       -0.391044    1.846991   -0.167965
+      2          6           0       -0.313238    0.651331    0.142149
+      3          7           0       -1.222551   -0.368229   -0.184990
+      4          7           0       -1.745343   -1.302141    0.132202
+      5          8           0        1.230735   -0.528808   -1.018723
+      6          7           0        1.575725   -0.517750    0.225975
+      7          6           0        0.796369    0.079392    0.999813
+      8          1           0       -1.073913    2.150722   -0.835699
+      9          1           0        0.811741    0.083303    2.097150
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):           3.9781187           2.9521482           2.2275717
+ Standard basis: STO-3G (5D, 7F)
+ There are    37 symmetry adapted cartesian basis functions of A   symmetry.
+ There are    37 symmetry adapted basis functions of A   symmetry.
+    37 basis functions,   111 primitive gaussians,    37 cartesian basis functions
+    25 alpha electrons       25 beta electrons
+       nuclear repulsion energy       274.0348243627 Hartrees.
+ NAtoms=    9 NActive=    9 NUniq=    9 SFac= 1.00D+00 NAtFMM=   60 NAOKFM=F Big=F
+ Integral buffers will be    131072 words long.
+ Raffenetti 1 integral format.
+ Two-electron integral symmetry is turned on.
+ External calculation of energy and first derivatives.
+ Running external command "/groups/kemi/mharris/github/xtb_ts_test/xtb_external.py R"
+         input file       "/scratch/23802732/Gau-12237.EIn"
+         output file      "/scratch/23802732/Gau-12237.EOu"
+         message file     "/scratch/23802732/Gau-12237.EMs"
+         fchk file        "/scratch/23802732/Gau-12237.EFC"
+         mat. el file     "/scratch/23802732/Gau-12237.EUF"
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+ Recovered energy= -20.8112927549     dipole=     -1.448000000000      0.530000000000      0.810000000000
+ NRF= 0 NRA=   0 NVA=   9 HaveQM=F NVQ=       0
+ Convergence limit is  0.750E-04 MaxStp= 10000 StMxLn= 3.00D-04 StpMin= 1.00D-06.
+ Convergence criteria             0.00011250 0.00007500 0.00045000 0.00030000
+  Step  NS  ND Rises OKQ   Scale  Max. Force  RMS Force Max. Disp.  RMS Disp.     Energy   Flag
+     1   0   0   F    T  1.00D+00 0.04300970 0.01641689 0.04300970 0.01641689  -20.8112928 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     2   0   0   F    F -4.58D-01 0.04300970 0.01641689 0.01969645 0.00751818  -20.8119621 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     3   0   0   F    T  1.38D+00 0.01243724 0.00606093 0.02058392 0.00889872  -20.8132172 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     4   0   0   F    F -2.67D-01 0.01243724 0.00606093 0.00548921 0.00237306  -20.8136536 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     5   0   0   F    T  1.38D+00 0.00846799 0.00393477 0.01446071 0.00652565  -20.8137215 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     6   0   0   F    F  1.34D+00 0.00846799 0.00393477 0.01940864 0.00875849  -20.8141768 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     7   0   0   F    T  2.33D+00 0.00845467 0.00405737 0.04201774 0.01528415  -20.8144019 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     8   0   0   F    F  2.38D-01 0.00845467 0.00405737 0.01001708 0.00364376  -20.8150264 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+     9   0   0   F    T  1.64D+00 0.00882090 0.00512308 0.05484727 0.01892791  -20.8150509 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    10   0   0   F    F  1.85D-02 0.00882090 0.00512308 0.00101646 0.00035078  -20.8156226 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    11   0   0   F    T  1.00D+00 0.01948417 0.00669649 0.06294644 0.02145413  -20.8156228 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    12   0   0   F    F  1.94D+00 0.01948417 0.00669649 0.12217701 0.04164177  -20.8166949 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    13   0   0   F    F -1.56D-01 0.01948417 0.00669649 0.01904486 0.00649109  -20.8175066 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    14   0   0   F    T  1.00D+00 0.03083367 0.01332202 0.27023586 0.09093371  -20.8175447 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    15   0   0   F    F -4.08D-01 0.03083367 0.01332202 0.11020032 0.03708214  -20.8179102 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    16   0   0   F    F  1.53D-02 0.03083367 0.01332202 0.00168101 0.00056566  -20.8192878 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    17   0   0   F    T  1.00D+00 0.05872719 0.02021095 0.23701284 0.08066690  -20.8192881 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    18   0   0   F    F  4.22D-02 0.05872719 0.02021095 0.00999129 0.00340052  -20.8248800 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    19   0   0   F    T  5.76D+00 0.02807743 0.01161051 0.17597216 0.08406742  -20.8248886 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    20   0   0   T    F  1.80D-01 0.02807743 0.01161051 0.03173710 0.01516181  -20.7810673 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    21   0   0   F    F  1.14D-02 0.02807743 0.01161051 0.00036057 0.00017226  -20.8268314 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    22   0   0   F    T  1.02D+00 0.02957355 0.01019344 0.03117812 0.01533406  -20.8268316 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    23   0   0   F    F  2.82D-01 0.02957355 0.01019344 0.00880513 0.00433055  -20.8286230 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    24   0   0   F    T  2.46D+00 0.01763303 0.00607484 0.03315303 0.01966461  -20.8287185 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    25   0   0   F    F -1.77D-01 0.01763303 0.00607484 0.00586723 0.00348013  -20.8296840 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    26   0   0   F    T  1.50D+00 0.01388762 0.00639896 0.03722915 0.01618448  -20.8297311 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    27   0   0   F    F  2.35D-01 0.01388762 0.00639896 0.00875011 0.00380390  -20.8307203 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    28   0   0   F    T  2.50D+00 0.01004736 0.00479511 0.05649864 0.01998838  -20.8307579 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    29   0   0   F    F -2.63D-01 0.01004736 0.00479511 0.01488093 0.00526465  -20.8312574 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    30   0   0   F    T  1.46D+00 0.01223669 0.00508782 0.04530719 0.01472373  -20.8313316 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    31   0   0   F    F  1.03D+00 0.01223669 0.00508782 0.04645914 0.01509809  -20.8320961 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    32   0   0   F    F -9.00D-03 0.01223669 0.00508782 0.00041800 0.00013584  -20.8323549 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    33   0   0   F    T  2.24D+00 0.01688847 0.00573686 0.08744367 0.02968598  -20.8323549 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    34   0   0   F    F -4.79D-02 0.01688847 0.00573686 0.00418803 0.00142178  -20.8333241 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    35   0   0   F    T  1.82D+00 0.02114738 0.00614847 0.07962450 0.02826420  -20.8333267 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    36   0   0   F    F -3.36D-02 0.02114738 0.00614847 0.00267514 0.00094959  -20.8342000 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    37   0   0   F    T  1.02D+00 0.02330732 0.00781246 0.07446975 0.02731460  -20.8342010 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    38   0   0   F    F  4.36D-01 0.02330732 0.00781246 0.03250471 0.01192233  -20.8353595 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    39   0   0   F    T  3.51D+00 0.00981619 0.00462446 0.09143497 0.03923694  -20.8354894 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    40   0   0   F    F -4.70D-01 0.00981619 0.00462446 0.04301928 0.01846060  -20.8356385 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    41   0   0   F    T  1.64D+00 0.01063667 0.00468047 0.05236390 0.02077634  -20.8360124 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    42   0   0   F    F -2.24D-01 0.01063667 0.00468047 0.01173783 0.00465720  -20.8363592 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    43   0   0   F    T  1.43D+00 0.00944802 0.00419201 0.04051890 0.01611914  -20.8363916 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    44   0   0   F    F  9.83D-01 0.00944802 0.00419201 0.03983604 0.01584748  -20.8368876 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    45   0   0   F    T  2.35D+00 0.00963361 0.00446436 0.09854114 0.03196662  -20.8370415 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    46   0   0   F    F -4.45D-01 0.00963361 0.00446436 0.04382858 0.01421793  -20.8371561 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    47   0   0   F    T  1.48D+00 0.00998506 0.00415566 0.04867745 0.01774868  -20.8373972 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    48   0   0   F    F -2.74D-02 0.00998506 0.00415566 0.00133414 0.00048645  -20.8377283 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    49   0   0   F    T  1.87D+00 0.00760080 0.00354369 0.05440708 0.01726223  -20.8377286 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    50   0   0   F    F  3.80D-01 0.00760080 0.00354369 0.02066107 0.00655533  -20.8381396 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    51   0   0   F    T  2.33D+00 0.00849114 0.00360285 0.05993596 0.02381756  -20.8381741 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    52   0   0   T    F  4.90D-01 0.00849114 0.00360285 0.02938465 0.01167698  -20.8381610 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    53   0   0   F    T  1.44D+00 0.00909968 0.00306202 0.03254348 0.01167698  -20.8383740 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    54   0   0   F    F  7.05D-01 0.00909968 0.00306202 0.02295743 0.00823739  -20.8386333 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    55   0   0   F    T  1.30D+00 0.00965883 0.00413953 0.04609523 0.01991437  -20.8386877 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    56   0   0   F    F  4.25D-01 0.00965883 0.00413953 0.01957049 0.00845497  -20.8390718 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    57   0   0   F    T  5.04D+00 0.00688367 0.00247126 0.07249625 0.02836934  -20.8391083 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    58   0   0   T    F  4.95D-01 0.00688367 0.00247126 0.03590114 0.01404889  -20.8390997 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    59   0   0   F    T  1.00D+00 0.01056011 0.00423320 0.03389750 0.01702234  -20.8393140 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    60   0   0   F    F  6.25D-01 0.01056011 0.00423320 0.02118185 0.01063691  -20.8396496 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    61   0   0   F    T  5.44D+00 0.00757676 0.00246106 0.05493614 0.02765924  -20.8397079 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    62   0   0   F    F -3.68D-01 0.00757676 0.00246106 0.02020229 0.01017145  -20.8398933 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    63   0   0   F    T  3.72D+00 0.00642865 0.00221742 0.03876444 0.01748780  -20.8399893 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    64   0   0   T    F  2.41D-01 0.00642865 0.00221742 0.00933980 0.00421346  -20.8394696 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    65   0   0   F    T  2.51D+00 0.00207752 0.00113100 0.00784709 0.00421346  -20.8400487 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    66   0   0   F    F -4.15D-01 0.00207752 0.00113100 0.00325637 0.00174849  -20.8400613 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    67   0   0   F    T  1.00D+00 0.00273714 0.00133023 0.00487783 0.00268643  -20.8400740 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    68   0   0   F    F  1.38D+00 0.00273714 0.00133023 0.00672510 0.00370380  -20.8401118 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    69   0   0   F    T  2.99D+00 0.00247303 0.00111141 0.01224592 0.00639023  -20.8401310 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    70   0   0   T    F  4.86D-01 0.00247303 0.00111141 0.00595196 0.00310588  -20.8401281 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    71   0   0   F    T  1.38D+00 0.00262738 0.00106999 0.00753282 0.00310588  -20.8401553 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    72   0   0   F    F  2.23D-01 0.00262738 0.00106999 0.00167789 0.00069182  -20.8401805 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    73   0   0   F    T  2.27D+00 0.00262107 0.00085182 0.00822130 0.00379770  -20.8401813 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    74   0   0   F    F  9.36D-02 0.00262107 0.00085182 0.00076953 0.00035547  -20.8402055 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    75   0   0   F    T  1.78D+00 0.00253526 0.00095680 0.00962870 0.00415317  -20.8402057 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    76   0   0   F    F -2.33D-01 0.00253526 0.00095680 0.00224576 0.00096867  -20.8402211 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    77   0   0   F    T  1.06D+00 0.00277090 0.00105384 0.00662070 0.00318450  -20.8402226 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    78   0   0   F    F  1.00D+00 0.00277090 0.00105384 0.00663430 0.00319104  -20.8402464 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    79   0   0   F    T  2.64D+00 0.00214322 0.00090407 0.01304038 0.00637554  -20.8402544 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    80   0   0   F    F -4.92D-02 0.00214322 0.00090407 0.00064161 0.00031369  -20.8402819 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    81   0   0   F    T  1.88D+00 0.00212133 0.00101885 0.01340503 0.00606185  -20.8402819 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    82   0   0   F    F -3.41D-02 0.00212133 0.00101885 0.00045667 0.00020651  -20.8403076 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    83   0   0   F    T  1.81D+00 0.00206679 0.00100210 0.01510853 0.00585535  -20.8403076 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    84   0   0   F    F -1.26D-01 0.00206679 0.00100210 0.00189804 0.00073559  -20.8403284 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    85   0   0   F    T  1.02D+00 0.00290168 0.00122935 0.01340678 0.00511976  -20.8403289 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    86   0   0   F    F  1.28D+00 0.00290168 0.00122935 0.01713426 0.00654320  -20.8403620 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    87   0   0   F    T  2.92D+00 0.00191124 0.00103530 0.03303684 0.01166296  -20.8403781 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    88   0   0   F    F -3.78D-01 0.00191124 0.00103530 0.01250369 0.00441416  -20.8403950 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    89   0   0   F    T  1.39D+00 0.00239961 0.00114529 0.02068056 0.00724880  -20.8404040 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    90   0   0   F    F -7.95D-02 0.00239961 0.00114529 0.00164313 0.00057594  -20.8404268 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    91   0   0   F    T  2.74D+00 0.00194406 0.00076046 0.01988225 0.00667286  -20.8404270 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    92   0   0   F    F -1.21D-01 0.00194406 0.00076046 0.00240414 0.00080688  -20.8404453 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    93   0   0   F    T  1.13D+00 0.00255310 0.00109366 0.01699407 0.00586598  -20.8404456 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    94   0   0   F    F  3.19D-01 0.00255310 0.00109366 0.00541942 0.00187067  -20.8404686 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    95   0   0   F    T  1.94D+00 0.00196365 0.00094012 0.02233520 0.00773665  -20.8404701 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    96   0   0   F    F -2.82D-02 0.00196365 0.00094012 0.00063081 0.00021850  -20.8404924 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    97   0   0   F    T  1.55D+00 0.00218975 0.00102428 0.02105120 0.00751814  -20.8404925 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    98   0   0   F    F  5.67D-01 0.00218975 0.00102428 0.01194059 0.00426442  -20.8405228 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+    99   0   0   F    T  2.36D+00 0.00232180 0.00104094 0.03235174 0.01178256  -20.8405276 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   100   0   0   T    F  4.73D-01 0.00232180 0.00104094 0.01530498 0.00557410  -20.8405240 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   101   0   0   F    T  1.35D+00 0.00165937 0.00093073 0.01430240 0.00557410  -20.8405438 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   102   0   0   F    F  7.86D-01 0.00165937 0.00093073 0.01124134 0.00438111  -20.8405667 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   103   0   0   F    T  1.98D+00 0.00252744 0.00100941 0.02460817 0.00995521  -20.8405721 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   104   0   0   F    F  9.35D-02 0.00252744 0.00100941 0.00230111 0.00093091  -20.8406015 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   105   0   0   F    T  2.38D+00 0.00302417 0.00095903 0.02702075 0.01088612  -20.8406017 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   106   0   0   T    F  3.96D-01 0.00302417 0.00095903 0.01071105 0.00431526  -20.8405862 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   107   0   0   F    T  1.57D+00 0.00223664 0.00073027 0.01093821 0.00431526  -20.8406134 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   108   0   0   F    F  1.26D+00 0.00223664 0.00073027 0.01377120 0.00543292  -20.8406308 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   109   0   0   F    T  1.74D+00 0.00246669 0.00103132 0.02504048 0.00974818  -20.8406385 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   110   0   0   F    F  1.26D-01 0.00246669 0.00103132 0.00315469 0.00122811  -20.8406662 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   111   0   0   F    T  1.24D+00 0.00317399 0.00128493 0.02843132 0.01097629  -20.8406665 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   112   0   0   F    F  6.10D-01 0.00317399 0.00128493 0.01735711 0.00670094  -20.8407045 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   113   0   0   F    T  1.31D+00 0.00347276 0.00157314 0.04550085 0.01767724  -20.8407107 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   114   0   0   F    F  3.59D-01 0.00347276 0.00157314 0.01632598 0.00634270  -20.8407670 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   115   0   0   F    T  2.16D+00 0.00331593 0.00143506 0.05895188 0.02401994  -20.8407713 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   116   0   0   F    F -6.05D-02 0.00331593 0.00143506 0.00356746 0.00145356  -20.8408279 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   117   0   0   F    T  1.67D+00 0.00287032 0.00163050 0.05185152 0.02256638  -20.8408281 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   118   0   0   F    F -1.74D-01 0.00287032 0.00163050 0.00904432 0.00393619  -20.8408762 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   119   0   0   F    T  1.33D+00 0.00378099 0.00171990 0.04191200 0.01863019  -20.8408786 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   120   0   0   F    F  2.37D+00 0.00378099 0.00171990 0.09929687 0.04413817  -20.8409675 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   121   0   0   F    F -1.52D-01 0.00378099 0.00171990 0.01513013 0.00672545  -20.8410396 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   122   0   0   F    F -2.43D-02 0.00378099 0.00171990 0.00036842 0.00016376  -20.8410422 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   123   0   0   F    T  1.54D+00 0.00780645 0.00296431 0.12407993 0.05620667  -20.8410422 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   124   0   0   F    F -1.58D-01 0.00780645 0.00296431 0.01955243 0.00885701  -20.8412038 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   125   0   0   F    T  1.52D+00 0.00670919 0.00327593 0.10132113 0.04734966  -20.8412110 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   126   0   0   F    F  3.25D-01 0.00670919 0.00327593 0.03296570 0.01540562  -20.8414668 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   127   0   0   F    F -5.96D-02 0.00670919 0.00327593 0.00196427 0.00091795  -20.8414805 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   128   0   0   F    T  2.12D+00 0.00744209 0.00332073 0.13217128 0.06183733  -20.8414805 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   129   0   0   F    F -8.73D-02 0.00744209 0.00332073 0.01153219 0.00539542  -20.8417859 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   130   0   0   F    T  1.43D+00 0.01056423 0.00400849 0.11733324 0.05644191  -20.8417891 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   131   0   0   F    T  1.85D+00 0.00781694 0.00380982 0.11733284 0.05644191  -20.8420946 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   132   0   0   F    F -3.68D-02 0.00781694 0.00380982 0.00431741 0.00207685  -20.8424417 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   133   0   0   F    T  2.30D+00 0.00793897 0.00322633 0.10685051 0.05436506  -20.8424422 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   134   0   0   F    F -3.37D-01 0.00793897 0.00322633 0.03605126 0.01834272  -20.8426007 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   135   0   0   F    T  1.30D+00 0.00779207 0.00319284 0.07128516 0.03602234  -20.8426475 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   136   0   0   F    F -1.26D-02 0.00779207 0.00319284 0.00090147 0.00045554  -20.8428259 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   137   0   0   F    T  1.95D+00 0.00457047 0.00231075 0.07025552 0.03556680  -20.8428259 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   138   0   0   F    F  3.83D-01 0.00457047 0.00231075 0.02690826 0.01362228  -20.8430088 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   139   0   0   F    F -1.38D-02 0.00457047 0.00231075 0.00037078 0.00018771  -20.8430245 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   140   0   0   F    T  3.38D+00 0.00444196 0.00220356 0.09935978 0.04900137  -20.8430245 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   141   0   0   T    F  4.89D-01 0.00444196 0.00220356 0.04858592 0.02396117  -20.8430098 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   142   0   0   F    T  1.49D+00 0.00522190 0.00236572 0.05226087 0.02396117  -20.8431336 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   143   0   0   F    F  1.89D-01 0.00522190 0.00236572 0.00989591 0.00453719  -20.8432610 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   144   0   0   F    T  1.35D+00 0.00716313 0.00265483 0.06072096 0.02849836  -20.8432642 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   145   0   0   F    F -7.94D-02 0.00716313 0.00265483 0.00482056 0.00226245  -20.8433824 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   146   0   0   F    T  2.03D+00 0.00435552 0.00195845 0.05323080 0.02623591  -20.8433833 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   147   0   0   F    F -1.54D-01 0.00435552 0.00195845 0.00817677 0.00403009  -20.8434697 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   148   0   0   F    T  2.82D+00 0.00311392 0.00157333 0.04415220 0.02220582  -20.8434727 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   149   0   0   F    F -4.66D-01 0.00311392 0.00157333 0.02057177 0.01034632  -20.8434840 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   150   0   0   F    T  1.91D+00 0.00237855 0.00139078 0.02376400 0.01185950  -20.8435233 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   151   0   0   F    F -2.78D-02 0.00237855 0.00139078 0.00065975 0.00032925  -20.8435717 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   152   0   0   F    T  1.00D+00 0.00470964 0.00189266 0.02375360 0.01162103  -20.8435717 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   153   0   0   F    F  4.94D-01 0.00470964 0.00189266 0.01174412 0.00574561  -20.8436364 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   154   0   0   F    T  2.74D+00 0.00351850 0.00139442 0.03818129 0.01736664  -20.8436444 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   155   0   0   F    F -3.48D-01 0.00351850 0.00139442 0.01327426 0.00603776  -20.8436780 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   156   0   0   F    T  3.18D+00 0.00218651 0.00104491 0.02887187 0.01132889  -20.8436916 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   157   0   0   T    F  4.47D-01 0.00218651 0.00104491 0.01290938 0.00506545  -20.8436808 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   158   0   0   F    T  1.03D+00 0.00312838 0.00121265 0.01381926 0.00506545  -20.8437126 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   159   0   0   F    F  9.28D-01 0.00312838 0.00121265 0.01282495 0.00470098  -20.8437422 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   160   0   0   F    F -5.88D-02 0.00312838 0.00121265 0.00075443 0.00027654  -20.8437502 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   161   0   0   F    T  1.54D+00 0.00287074 0.00132868 0.02750609 0.00948989  -20.8437502 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   162   0   0   F    F  4.77D-01 0.00287074 0.00132868 0.01310975 0.00452300  -20.8437980 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   163   0   0   F    T  2.35D+00 0.00225649 0.00122010 0.04360825 0.01401289  -20.8438033 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   164   0   0   F    F -4.02D-01 0.00225649 0.00122010 0.01753247 0.00563381  -20.8438187 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   165   0   0   F    T  1.58D+00 0.00224707 0.00114815 0.02740783 0.00837908  -20.8438315 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   166   0   0   F    F -8.74D-02 0.00224707 0.00114815 0.00239456 0.00073206  -20.8438571 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   167   0   0   F    T  1.22D+00 0.00291953 0.00123983 0.02541988 0.00764702  -20.8438573 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   168   0   0   F    F  2.06D+00 0.00291953 0.00123983 0.05233587 0.01574411  -20.8438975 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   169   0   0   F    F -1.19D-01 0.00291953 0.00123983 0.00620956 0.00186801  -20.8439235 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   170   0   0   F    T  2.07D+00 0.00376401 0.00154719 0.07539955 0.02152312  -20.8439239 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   171   0   0   F    F -2.10D-01 0.00376401 0.00154719 0.01584965 0.00452435  -20.8439728 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   172   0   0   F    T  1.00D+00 0.00569513 0.00199480 0.06827283 0.01908766  -20.8439765 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   173   0   0   F    T  2.28D+00 0.00522829 0.00234373 0.06732482 0.01908766  -20.8440847 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   174   0   0   F    F  4.32D-01 0.00522829 0.00234373 0.02906179 0.00823948  -20.8443531 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   175   0   0   F    F -2.89D-02 0.00522829 0.00234373 0.00083962 0.00023805  -20.8443758 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   176   0   0   F    T  1.00D+00 0.01840476 0.00682677 0.28235341 0.07885398  -20.8443759 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   177   0   0   F    T  1.00D+00 0.03413063 0.01622919 1.02909573 0.28780374  -20.8464899 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   178   0   0   T    F  1.54D-01 0.03413063 0.01622919 0.15851498 0.04433135  -20.7950016 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   179   0   0   F    F  4.15D-01 0.03413063 0.01622919 0.06576176 0.01839137  -20.8485950 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   180   0   0   F    F  2.59D-01 0.03413063 0.01622919 0.01705393 0.00476942  -20.8489505 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   181   0   0   F    T  1.00D+00 0.04946052 0.02182728 0.60341930 0.17378936  -20.8489677 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   182   0   0   T    F  2.39D-01 0.04946052 0.02182728 0.14450169 0.04161759  -20.8310449 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   183   0   0   F    F  1.12D-01 0.04946052 0.02182728 0.01620780 0.00466797  -20.8508028 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   184   0   0   F    T  1.76D+00 0.06360598 0.02212586 0.12395335 0.04628556  -20.8508247 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   185   0   0   F    F -3.31D-01 0.06360598 0.02212586 0.04097427 0.01530025  -20.8567265 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   186   0   0   F    T  2.30D+00 0.02120433 0.01149500 0.08808604 0.03098531  -20.8587825 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   187   0   0   F    F -4.47D-01 0.02120433 0.01149500 0.03937555 0.01385082  -20.8594744 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   188   0   0   F    T  1.63D+00 0.01642538 0.00826535 0.03611862 0.01713449  -20.8611016 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   189   0   0   F    F -1.18D-01 0.01642538 0.00826535 0.00424869 0.00201556  -20.8624124 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   190   0   0   F    T  1.00D+00 0.01866406 0.00907537 0.02926903 0.01537171  -20.8624365 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   191   0   0   F    F  3.69D-01 0.01866406 0.00907537 0.01080865 0.00567656  -20.8638680 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   192   0   0   F    T  2.86D+00 0.01573192 0.00513815 0.04425996 0.02104827  -20.8639832 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   193   0   0   F    F -2.90D-01 0.01573192 0.00513815 0.01283838 0.00610542  -20.8645841 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   194   0   0   F    T  1.91D+00 0.01130605 0.00483229 0.03681340 0.01494285  -20.8647025 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   195   0   0   F    F  5.25D-02 0.01130605 0.00483229 0.00193288 0.00078457  -20.8653326 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   196   0   0   F    T  1.71D+00 0.01051613 0.00485135 0.03388132 0.01572742  -20.8653341 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   197   0   0   F    F  1.55D-01 0.01051613 0.00485135 0.00523507 0.00243008  -20.8659454 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   198   0   0   F    T  1.98D+00 0.00850629 0.00449953 0.04184591 0.01815750  -20.8659564 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   199   0   0   F    F -2.32D-01 0.00850629 0.00449953 0.00969333 0.00420607  -20.8663365 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   200   0   0   F    T  1.52D+00 0.01040349 0.00431330 0.03411424 0.01395143  -20.8663753 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   201   0   0   F    F -3.25D-01 0.01040349 0.00431330 0.01108590 0.00453371  -20.8665727 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   202   0   0   F    T  2.74D+00 0.00585176 0.00225218 0.02113557 0.00941772  -20.8666313 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   203   0   0   F    F -4.59D-01 0.00585176 0.00225218 0.00970906 0.00432622  -20.8666587 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   204   0   0   F    T  2.07D+00 0.00487574 0.00163820 0.01047655 0.00509150  -20.8667331 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   205   0   0   F    F  6.51D-01 0.00487574 0.00163820 0.00682377 0.00331628  -20.8668374 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   206   0   0   F    T  1.36D+00 0.00501754 0.00249071 0.01790348 0.00840778  -20.8668565 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   207   0   0   F    F  1.93D-01 0.00501754 0.00249071 0.00345799 0.00162393  -20.8669891 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   208   0   0   F    T  2.25D+00 0.00366324 0.00199032 0.02452102 0.01003171  -20.8669926 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   209   0   0   T    F  4.88D-01 0.00366324 0.00199032 0.01197761 0.00490012  -20.8669863 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   210   0   0   F    T  1.60D+00 0.00334512 0.00154258 0.01224839 0.00490012  -20.8670516 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   211   0   0   F    F -1.69D-01 0.00334512 0.00154258 0.00207502 0.00083013  -20.8670926 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   212   0   0   F    T  2.10D+00 0.00300190 0.00111153 0.01118353 0.00406998  -20.8670944 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   213   0   0   F    F  8.42D-01 0.00300190 0.00111153 0.00941237 0.00342541  -20.8671454 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   214   0   0   F    T  3.37D+00 0.00260874 0.00110661 0.02175338 0.00749539  -20.8671588 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   215   0   0   T    F  3.06D-01 0.00260874 0.00110661 0.00665607 0.00229343  -20.8670875 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   216   0   0   F    T  2.03D+00 0.00133392 0.00069931 0.00619946 0.00229343  -20.8671759 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   217   0   0   F    F -2.56D-01 0.00133392 0.00069931 0.00158562 0.00058658  -20.8671847 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   218   0   0   F    T  1.23D+00 0.00162801 0.00071690 0.00398347 0.00170684  -20.8671859 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   219   0   0   F    F  1.60D-01 0.00162801 0.00071690 0.00063579 0.00027242  -20.8671956 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   220   0   0   F    T  1.68D+00 0.00124585 0.00061211 0.00420113 0.00197927  -20.8671958 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   221   0   0   F    F  1.85D-01 0.00124585 0.00061211 0.00077890 0.00036696  -20.8672056 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   222   0   0   F    T  3.63D+00 0.00110440 0.00040080 0.00562987 0.00234623  -20.8672059 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   223   0   0   F    F -4.70D-01 0.00110440 0.00040080 0.00264822 0.00110364  -20.8672067 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   224   0   0   F    T  1.69D+00 0.00077392 0.00039277 0.00308661 0.00124259  -20.8672100 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   225   0   0   F    T  1.41D+00 0.00093039 0.00040824 0.00300716 0.00124259  -20.8672136 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   226   0   0   F    F -1.66D-01 0.00093039 0.00040824 0.00049847 0.00020597  -20.8672162 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   227   0   0   F    T  2.14D+00 0.00048362 0.00026531 0.00235230 0.00103662  -20.8672163 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   228   0   0   F    F -4.11D-01 0.00048362 0.00026531 0.00096645 0.00042590  -20.8672170 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   229   0   0   F    T  2.09D+00 0.00034803 0.00018392 0.00122241 0.00061072  -20.8672175 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   230   0   0   F    T  2.24D+00 0.00037969 0.00015301 0.00139158 0.00061072  -20.8672184 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   231   0   0   F    F -3.10D-01 0.00037969 0.00015301 0.00043143 0.00018934  -20.8672187 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   232   0   0   F    T  2.52D+00 0.00026257 0.00012435 0.00085143 0.00042138  -20.8672188 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   233   0   0   F    F -4.53D-01 0.00026257 0.00012435 0.00038603 0.00019105  -20.8672189 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   234   0   0   F    T  1.01D+00 0.00026372 0.00012946 0.00058707 0.00023033  -20.8672191 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   235   0   0   F    F  1.09D+00 0.00026372 0.00012946 0.00063821 0.00025040  -20.8672194 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   236   0   0   F    T  1.39D+00 0.00035000 0.00015176 0.00117925 0.00048073  -20.8672196 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   237   0   0   F    T  2.43D+00 0.00025316 0.00011454 0.00117562 0.00048073  -20.8672201 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   238   0   0   F    T  2.14D+00 0.00022818 0.00009780 0.00112435 0.00048073  -20.8672205 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   239   0   0   F    F -3.66D-01 0.00022818 0.00009780 0.00041111 0.00017578  -20.8672206 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   240   0   0   F    T  1.83D+00 0.00021739 0.00010042 0.00070243 0.00030495  -20.8672206 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   241   0   0   F    T  1.17D+00 0.00027205 0.00010399 0.00077264 0.00030495  -20.8672207 ----
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   242   0   0   T    T  1.00D+00 0.00033430 0.00012496 0.00033430 0.00012496  -20.8672207 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   243   0   0   F    T  1.00D+00 0.00026094 0.00011063 0.00034862 0.00013961  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   244   0   0   T    T  1.00D+00 0.00034716 0.00016653 0.00034716 0.00016653  -20.8672206 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   245   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00017358 0.00008326  -20.8672202 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   246   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00008679 0.00004163  -20.8672206 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   247   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00004340 0.00002082  -20.8672207 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   248   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00002170 0.00001041  -20.8672207 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   249   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00001085 0.00000520  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   250   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00000542 0.00000260  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   251   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00000271 0.00000130  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   252   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00000136 0.00000065  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   253   0   0   T    F  5.00D-01 0.00034716 0.00016653 0.00000068 0.00000033  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   254   0   0   T    T  1.00D+00 0.00026234 0.00011087 0.00025299 0.00011078  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   255   0   0   F    T  1.00D+00 0.00031114 0.00010778 0.00059108 0.00021974  -20.8672208 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   256   0   0   T    T  1.00D+00 0.00041819 0.00016284 0.00041819 0.00016284  -20.8672205 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   257   0   0   T    F  5.00D-01 0.00041819 0.00016284 0.00020909 0.00008142  -20.8672205 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   258   0   0   T    F  5.00D-01 0.00041819 0.00016284 0.00010455 0.00004071  -20.8672207 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   259   0   0   T    F  5.00D-01 0.00041819 0.00016284 0.00005227 0.00002036  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   260   0   0   T    F  5.00D-01 0.00041819 0.00016284 0.00002614 0.00001018  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   261   0   0   T    F  5.00D-01 0.00041819 0.00016284 0.00001307 0.00000509  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   262   0   0   T    F  5.00D-01 0.00041819 0.00016284 0.00000653 0.00000254  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   263   0   0   T    F  5.00D-01 0.00041819 0.00016284 0.00000327 0.00000127  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   264   0   0   F    T  1.00D+00 0.00031105 0.00010778 0.00030347 0.00012860  -20.8672208 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   265   0   0   T    T  1.00D+00 0.00040237 0.00015326 0.00040236 0.00015326  -20.8672207 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   266   0   0   T    F  5.00D-01 0.00040237 0.00015326 0.00020118 0.00007663  -20.8672198 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   267   0   0   F    T -1.36D-03 0.00076252 0.00026131 0.00076252 0.00026131  -20.8672205 ---+
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   268   0   0   T    T  4.48D-01 0.00099038 0.00033082 0.00034168 0.00011709  -20.8672203 --++
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+   269   0   0   F    T -1.57D-04 0.00006127 0.00003012 0.00006127 0.00003012  -20.8672209 ====
+ Running external command "/groups/kemi/mharris/github/xtb_ts_test/xtb_external.py R"
+         input file       "/scratch/23802732/Gau-12237.EIn"
+         output file      "/scratch/23802732/Gau-12237.EOu"
+         message file     "/scratch/23802732/Gau-12237.EMs"
+         fchk file        "/scratch/23802732/Gau-12237.EFC"
+         mat. el file     "/scratch/23802732/Gau-12237.EUF"
+/groups/kemi/koerstz/opt/xtb/6.1/bin/xtb mol.xyz --chrg 0 --uhf 0 --gfn 2 --grad 
+ Recovered energy= -20.8672208993     dipole=     -0.272000000000      0.837000000000      0.246000000000
+ Energy=    -20.8672209     NIter=   0.
+ Dipole moment=      -0.272000       0.837000       0.246000
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1        7           0.000037411   -0.000007032   -0.000028014
+      2        6          -0.000066222    0.000014133   -0.000030615
+      3        7           0.000025091    0.000029692    0.000017462
+      4        7          -0.000004631   -0.000023830    0.000052395
+      5        8          -0.000010947    0.000013117   -0.000031892
+      6        7          -0.000011075    0.000031801   -0.000050424
+      7        6           0.000016534   -0.000035771    0.000036472
+      8        1           0.000026568   -0.000018211   -0.000013560
+      9        1          -0.000012730   -0.000003898    0.000048174
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.000066222 RMS     0.000030120
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Search for a local minimum.
+ Step number   1 out of a maximum of    2
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ Mixed Optimization -- En-DIIS/RFO-DIIS
+ Second derivative matrix not updated -- unit matrix used.
+ ITU=  0
+ RFO step:  Lambda=-2.44948890D-08 EMin= 1.00000000D+00
+ Linear search not attempted -- first point.
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    X1       -1.78549   0.00004   0.00000   0.00004   0.00004  -1.78545
+    Y1        1.02812  -0.00001   0.00000  -0.00001  -0.00001   1.02812
+    Z1       -0.13802  -0.00003   0.00000  -0.00003  -0.00003  -0.13805
+    X2       -0.46688  -0.00007   0.00000  -0.00007  -0.00007  -0.46695
+    Y2       -0.93850   0.00001   0.00000   0.00001   0.00001  -0.93849
+    Z2       -0.00376  -0.00003   0.00000  -0.00003  -0.00003  -0.00379
+    X3       -1.50560   0.00003   0.00000   0.00003   0.00003  -1.50558
+    Y3       -3.41765   0.00003   0.00000   0.00003   0.00003  -3.41762
+    Z3       -0.46403   0.00002   0.00000   0.00002   0.00002  -0.46401
+    X4       -3.35874  -0.00000   0.00000  -0.00000  -0.00000  -3.35874
+    Y4       -4.36483  -0.00002   0.00000  -0.00002  -0.00002  -4.36486
+    Z4       -0.98874   0.00005   0.00000   0.00005   0.00005  -0.98868
+    X5        1.35628  -0.00001   0.00000  -0.00001  -0.00001   1.35627
+    Y5       -5.20869   0.00001   0.00000   0.00001   0.00001  -5.20868
+    Z5        0.06213  -0.00003   0.00000  -0.00003  -0.00003   0.06209
+    X6        2.96731  -0.00001   0.00000  -0.00001  -0.00001   2.96730
+    Y6       -3.51442   0.00003   0.00000   0.00003   0.00003  -3.51439
+    Z6        0.58265  -0.00005   0.00000  -0.00005  -0.00005   0.58260
+    X7        2.16974   0.00002   0.00000   0.00002   0.00002   2.16976
+    Y7       -1.21106  -0.00004   0.00000  -0.00004  -0.00004  -1.21109
+    Z7        0.58927   0.00004   0.00000   0.00004   0.00004   0.58931
+    X8       -3.63986   0.00003   0.00000   0.00003   0.00003  -3.63984
+    Y8        0.79856  -0.00002   0.00000  -0.00002  -0.00002   0.79854
+    Z8       -0.59007  -0.00001   0.00000  -0.00001  -0.00001  -0.59009
+    X9        3.41535  -0.00001   0.00000  -0.00001  -0.00001   3.41534
+    Y9        0.32706  -0.00000   0.00000  -0.00000  -0.00000   0.32706
+    Z9        1.00921   0.00005   0.00000   0.00005   0.00005   1.00926
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.000066     0.000450     YES
+ RMS     Force            0.000030     0.000300     YES
+ Maximum Displacement     0.000066     0.001800     YES
+ RMS     Displacement     0.000030     0.001200     YES
+ Predicted change in Energy=-1.224744D-08
+ Optimization completed.
+    -- Stationary point found.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+                          Input orientation:                          
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          7           0       -0.944841    0.544059   -0.073036
+      2          6           0       -0.247064   -0.496633   -0.001989
+      3          7           0       -0.796730   -1.808544   -0.245555
+      4          7           0       -1.777367   -2.309771   -0.523217
+      5          8           0        0.717715   -2.756320    0.032876
+      6          7           0        1.570235   -1.859753    0.308324
+      7          6           0        1.148178   -0.640865    0.311828
+      8          1           0       -1.926133    0.422581   -0.312253
+      9          1           0        1.807325    0.173073    0.534051
+ ---------------------------------------------------------------------
+                    Distance matrix (angstroms):
+                    1          2          3          4          5
+     1  N    0.000000
+     2  C    1.254982   0.000000
+     3  N    2.363565   1.443111   0.000000
+     4  N    3.006677   2.429193   1.135770   0.000000
+     5  O    3.697000   2.457275   1.808133   2.595010   0.000000
+     6  N    3.499908   2.292808   2.431446   3.478565   1.267476
+     7  C    2.435753   1.437353   2.335983   3.470066   2.176755
+     8  H    1.017309   1.939198   2.501583   2.744519   4.149030
+     9  H    2.842640   2.226288   3.363881   4.486908   3.165402
+                    6          7          8          9
+     6  N    0.000000
+     7  C    1.289897   0.000000
+     8  H    4.221227   3.312368   0.000000
+     9  H    2.059016   1.070679   3.836299   0.000000
+ Stoichiometry    C2H2N4O
+ Framework group  C1[X(C2H2N4O)]
+ Deg. of freedom    21
+ Full point group                 C1      NOp   1
+ Largest Abelian subgroup         C1      NOp   1
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1          7           0       -1.699960    1.186338    0.002484
+      2          6           0       -0.575386    0.629290   -0.000392
+      3          7           0       -0.428916   -0.806369   -0.000252
+      4          7           0       -1.059129   -1.751249   -0.003012
+      5          8           0        1.378387   -0.860997    0.003410
+      6          7           0        1.702074    0.364445   -0.000029
+      7          6           0        0.735572    1.218669   -0.002932
+      8          1           0       -2.513844    0.576008    0.005128
+      9          1           0        0.927152    2.272061   -0.006801
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):           4.4528571           3.4287274           1.9371359
+ 1\1\GINC-NODE305\FOpt\RExternal='/groups/kemi/mharris/github/xtb_ts_te
+ st/xtb_external.py'\ZDO\C2H2N4O1\MHARRIS\11-Jun-2021\0\\#opt geom(modr
+ edundant, gic) external="/groups/kemi/mharris/github/xtb_ts_test/xtb_e
+ xternal.py"\\something title\\0,1\N,-0.9448405497,0.5440590666,-0.0730
+ 360538\C,-0.247063989,-0.4966325749,-0.0019889088\N,-0.7967298457,-1.8
+ 085440273,-0.2455545677\N,-1.7773667709,-2.30977094,-0.5232171914\O,0.
+ 7177146343,-2.7563195158,0.0328759769\N,1.5702350892,-1.8597527824,0.3
+ 083243815\C,1.1481777225,-0.6408646111,0.3118284147\H,-1.9261331193,0.
+ 4225809685,-0.3122533168\H,1.8073248286,0.1730734165,0.5340512654\\Ver
+ sion=ES64L-G16RevA.03\HF=-20.8672209\RMSD=0.000e+00\RMSF=3.012e-05\Dip
+ ole=-0.2725912,0.8721599,0.0100108\PG=C01 [X(C2H2N4O1)]\\@
+
+
+0EVERYBODY IS IGNORANT, ONLY ON DIFFERENT SUBJECTS.
+0          WILL ROGERS
+ Job cpu time:       0 days  0 hours  0 minutes  0.7 seconds.
+ Elapsed time:       0 days  0 hours  2 minutes  0.6 seconds.
+ File lengths (MBytes):  RWF=      6 Int=      0 D2E=      0 Chk=      1 Scr=      1
+ Normal termination of Gaussian 16 at Fri Jun 11 13:02:53 2021.
